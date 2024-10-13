@@ -1,3 +1,6 @@
+.reveal > .overlay {
+  backdrop-filter: unset !important;
+}
 #title {
   color: #56b8a1;
 }
@@ -5,7 +8,7 @@
   color: #56b8a1;
 }
 #qr {
-  width: 200px;
-  height: 200px;
+  width: 30%;
+  height: 30%;
   border-radius: 15px;
 }

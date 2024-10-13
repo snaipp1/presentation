@@ -16,6 +16,26 @@
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
     <link rel="stylesheet" href="./assets/styles/custom-styles.css" />
+
+    <!-- Custom controls plugin -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css"
+    />
+
+    <!-- Load content plugin -->
+
+    <link
+      href=" https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css "
+      rel="stylesheet"
+    />
+    <!-- Chalkboard plugin -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css"
+    />
   </head>
   <body>
     <div class="reveal">
@@ -56,17 +76,40 @@
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
     <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        controls: true,
+        // navigationMode: "linear",
         slideNumber: "c/t",
         autoPlayMedia: true,
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        customcontrols: {
+          controls: [
+            {
+              icon: '<i class="fa fa-pen"></i>',
+              title: "Toggle notes canvas (C)",
+              action: "RevealChalkboard.toggleNotesCanvas();",
+            },
+          ],
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMenu,
+          RevealChalkboard,
+          RevealCustomControls,
+          RevealLoadContent,
+        ],
       });
+
+      function getPath() {
+        return topics[topicId].folder;
+      }
     </script>
   </body>
 </html>
