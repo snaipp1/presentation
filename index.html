@@ -6,32 +6,36 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
 
-    <title>reveal.js</title>
+    <title>URCSS</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/League.css" />
-
-    <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
     <link rel="stylesheet" href="./assets/styles/custom-styles.css" />
-
-    <!-- Custom controls plugin -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css"
     />
-
-    <!-- Load content plugin -->
-
     <link
       href=" https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css "
       rel="stylesheet"
     />
-    <!-- Chalkboard plugin -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css"
@@ -40,34 +44,669 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section
-          data-background-video="/assets/video/back1.mp4"
-          data-background-video-loop
-          data-background-video-muted
-        >
+        <section>
           <h1 id="title">COTVEC/URCSS</h1>
           <h2 id="subtitle"></h2>
           <div>
             <img id="qr" src="./assets/images/qr.png" />
           </div>
         </section>
-        <section
-          data-background-video="/assets/video/back2.mp4"
-          data-background-video-loop
-          data-background-video-muted
-        >
+        <section>
+          <h3 id="title2">Вопросы к обсуждению</h3>
           <ul>
-            <li class="fragment" data-fragment-index="0">Первый</li>
-            <li class="fragment" data-fragment-index="2">Третий</li>
-            <li class="fragment" data-fragment-index="1">Второй</li>
+            <li id="list1" class="fragment" data-fragment-index="0">
+              Планируемая проектна работа
+            </li>
+            <li id="list2" class="fragment" data-fragment-index="1">
+              Экспертиза и кадровые задачи
+            </li>
+            <li id="list3" class="fragment" data-fragment-index="2">
+              Общие вопросы
+            </li>
           </ul>
         </section>
-        <section
-          data-background-video="/assets/video/back3.mp4"
-          data-background-video-loop
-          data-background-video-muted
-        >
-          Slide 3
+        <section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <h3 id="title3">Планируемая проектна работа</h3>
+            <p>
+              Планируемые/проанонсированные проекты на
+              <a href="#">2025 год</a>.
+            </p>
+            <div class="r-hstack justify-center" data-auto-animate>
+              <div
+                data-id="box1"
+                style="
+                  background: #56b8a1;
+                  width: 200px;
+                  height: 200px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/moby.png" />
+                <p style="font-size: 20px; color: #56b8a1">Moby</p>
+              </div>
+              <div
+                data-id="box2"
+                style="
+                  background: #56b8a1;
+                  width: 200px;
+                  height: 200px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <img
+                  data-transition="fade-in slide-out"
+                  style="margin: 0"
+                  src="./assets/images/dss.png"
+                />
+                <p style="font-size: 20px; color: #56b8a1">Phoenix</p>
+              </div>
+              <div
+                data-id="box3"
+                style="
+                  background: #56b8a1;
+                  width: 200px;
+                  height: 200px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/ipoteka.png " />
+                <p style="font-size: 20px; color: #56b8a1">
+                  Маркетплейс лизинга и ипотеки
+                </p>
+              </div>
+              <div
+                data-id="box4"
+                style="
+                  background: #56b8a1;
+                  width: 200px;
+                  height: 200px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/poscred.png " />
+                <p style="font-size: 20px; color: #56b8a1">
+                  Веб-кабинета для POS-кредитования
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: #9c71ca;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/moby.png" />
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/dss.png" />
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/ipoteka.png " />
+              </div>
+              <div
+                data-id="box4"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/poscred.png " />
+              </div>
+            </div>
+            <h3 style="margin-top: 20px">Moby</h3>
+            <ul>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="0"
+              >
+                Планируемая проектна работа
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="1"
+              >
+                Экспертиза и кадровые задачи
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="2"
+              >
+                Общие организационные вопросы
+              </li>
+            </ul>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/moby.png" />
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0"
+                style="
+                  background: #9c71ca;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/dss.png" />
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/ipoteka.png " />
+              </div>
+              <div
+                data-id="box4"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/poscred.png " />
+              </div>
+            </div>
+            <h3 style="margin-top: 20px">Phoenix</h3>
+            <ul>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="0"
+              >
+                Планируемая проектна работа
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="1"
+              >
+                Экспертиза и кадровые задачи
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="2"
+              >
+                Общие организационные вопросы
+              </li>
+            </ul>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/moby.png" />
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/dss.png" />
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: #9c71ca;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/ipoteka.png " />
+              </div>
+              <div
+                data-id="box4"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/poscred.png " />
+              </div>
+            </div>
+            <h3 style="margin-top: 20px">Маркетплейс лизинга и ипотеки</h3>
+            <ul>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="0"
+              >
+                Планируемая проектна работа
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="1"
+              >
+                Экспертиза и кадровые задачи
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="2"
+              >
+                Общие организационные вопросы
+              </li>
+            </ul>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/moby.png" />
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/dss.png" />
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: #56b8a1;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/ipoteka.png " />
+              </div>
+              <div
+                data-id="box4"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: #9c71ca;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 12px;
+                "
+              >
+                <img style="margin: 0" src="./assets/images/poscred.png " />
+              </div>
+            </div>
+            <h3 style="margin-top: 20px">Веб-кабинета ПОС-кредитования</h3>
+            <ul>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="0"
+              >
+                Планируемая проектна работа
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="1"
+              >
+                Экспертиза и кадровые задачи
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="2"
+              >
+                Общие организационные вопросы
+              </li>
+            </ul>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-stack">
+              <div
+                data-id="box2"
+                style="
+                  background: #56b8a1;
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 12px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="border-radius: 12px; width: 250px; height: 250px"
+              ></div>
+              <div
+                data-id="box4"
+                style="background: #56b8a1; width: 200px; height: 200px"
+              >
+                <img
+                  style="margin: 0"
+                  src="./assets/images/web-app-manifest-192x192.png"
+                />
+              </div>
+            </div>
+            <h4 style="margin-top: 20px">Прочее</h4>
+            <ul>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="0"
+              >
+                Планируемая проектна работа
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="1"
+              >
+                Экспертиза и кадровые задачи
+              </li>
+              <li
+                style="font-size: 30px"
+                class="fragment"
+                data-fragment-index="2"
+              >
+                Общие организационные вопросы
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3 style="color: #56b8a1">Экспертиза и кадровые задачи</h3>
+          <p>
+            Цели и задачи на
+            <a href="#">2025 год</a>.
+          </p>
+          <p
+            class="fragment"
+            data-fragment-index="0"
+            style="
+              font-size: 24px;
+              margin-top: 10px;
+              margin-left: 50px;
+              text-align: left;
+            "
+          >
+            Кадровые задачи:
+          </p>
+          <ul>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="0"
+            >
+              Сохранение экспертного ядра команды
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="1"
+            >
+              Формирование эффективной системы подбора сотрудников
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="2"
+            >
+              Формирование эффективной системы адаптации новых сотрдуников
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="2"
+            >
+              Формирование эффективной системы профессионального роста
+              сотрдуников
+            </li>
+          </ul>
+          <p
+            class="fragment"
+            data-fragment-index="4"
+            style="
+              font-size: 24px;
+              margin-top: 10px;
+              margin-left: 50px;
+              text-align: left;
+            "
+          >
+            Экспертиза:
+          </p>
+          <ul style="margin-left: 70px">
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="4"
+            >
+              Оптимизация работы отдела аналитики цифровых сервисов и систем
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="5"
+            >
+              Оптимизация фронтенд-направления в отделе разработки цифровых
+              сервисов и систем
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="6"
+            >
+              Расширение экспертизы в области информационной безопасности
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="6"
+            >
+              Расширение экспертизы за пределы цифрового сегмента за счет
+              увеличения коллаборации в задачах со смежными подразделениями
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="color: #56b8a1">Общие вопросы</h3>
+          <p
+            class="fragment"
+            data-fragment-index="0"
+            style="
+              font-size: 24px;
+              margin-top: 10px;
+              margin-left: 50px;
+              text-align: left;
+            "
+          >
+            Вопросы, требующие решения:
+          </p>
+          <ul>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="0"
+            >
+              Размещение сотрудников
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="1"
+            >
+              Процесс закупки техники
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="2"
+            >
+              Формирование эффективной системы адаптации новых сотрдуников
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="2"
+            >
+              Формирование эффективной системы профессионального роста
+              сотрдуников
+            </li>
+          </ul>
+          <p
+            class="fragment"
+            data-fragment-index="4"
+            style="
+              font-size: 24px;
+              margin-top: 10px;
+              margin-left: 50px;
+              text-align: left;
+            "
+          >
+            Экспертиза:
+          </p>
+          <ul style="margin-left: 70px">
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="4"
+            >
+              Оптимизация работы отдела аналитики цифровых сервисов и систем
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="5"
+            >
+              Оптимизация фронтенд-направления в отделе разработки цифровых
+              сервисов и систем
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="6"
+            >
+              Расширение экспертизы в области информационной безопасности
+            </li>
+            <li
+              style="color: #56b8a1; font-size: 24px"
+              class="fragment"
+              data-fragment-index="6"
+            >
+              Расширение экспертизы за пределы цифрового сегмента за счет
+              увеличения коллаборации в задачах со смежными подразделениями
+            </li>
+          </ul>
         </section>
       </div>
     </div>
